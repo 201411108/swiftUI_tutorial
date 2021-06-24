@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-// Section 4 : Create a Custom Image View
-// 코드 추가 없이 이미지의 일부 부분을 보일 수 있는 뷰를 만드는 방법
+// Section 5 : Use SwiftUI views from other frameworks
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {

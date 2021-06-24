@@ -9,9 +9,9 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Image("turtlerock") // assets에 저장된 이미지 이름을 통해 이미지 불러오기
-            .clipShape(Circle()) // clip할 모양 선택
-            .overlay(Circle().stroke(Color.white, lineWidth: 4)) // 원 모양에 대한 스타일 속성 지정
+        Image("turtlerock")
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.white, lineWidth: 4))
             .shadow(radius: 7)
     }
 }
