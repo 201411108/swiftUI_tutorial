@@ -7,21 +7,40 @@
 
 import SwiftUI
 
-// Section 5 : Use SwiftUI views from other frameworks
+// Section 6 : Compose the Detail View
+// 생성한 view들을 하나로 합치기
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Turtle Rock")
-                .font(.title)
-            HStack {
-                Text("Joshua Tree National Park")
-                    .font(.subheadline)
-                Spacer()
-                Text("California")
-                    .font(.subheadline)
+        VStack {
+            MapView()
+                .ignoresSafeArea(edges: .top) // 화면 위쪽까지 채우기
+                .frame(height: 300)
+            
+            CircleImage()
+                .offset(y: -130) // 이미지를 mapview 위에 겹치게 하기 위해 사용
+                .padding(.bottom, -130)
+            
+            VStack(alignment: .leading) {
+                Text("Turtle Rock")
+                    .font(.title)
+                HStack {
+                    Text("Joshua Tree National Park")
+                    Spacer()
+                    Text("California")
+                }
+                .font(.subheadline) // refactoring
+                .foregroundColor(.secondary)
+                
+                Divider()
+                
+                Text("About Turtle Rock")
+                    .font(.title2)
+                Text("Descriptive text goes here.")
             }
+            .padding()
+            
+            Spacer()
         }
-        .padding()
     }
 }
 
