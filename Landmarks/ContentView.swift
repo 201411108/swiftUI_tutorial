@@ -7,14 +7,11 @@
 
 import SwiftUI
 
-// Section 3 : combine views using stacks
-// 한 개의 뷰만 body 변수에 포함되기 여러 뷰를 보여주기 위해서는 스택에 포함시켜야 함
-// 1. Text의 cmd + click -> embed in vstack을 통해 vstack 생성(virtical stack)
-// 2. HStack -> horizontal stack
-// 3. Spacer -> 설정된 컨첸츠의 크기 대신 부모 View의 모든 공간을 활용할 수 있도록 해준다.
+// Section 4 : Create a Custom Image View
+// 코드 추가 없이 이미지의 일부 부분을 보일 수 있는 뷰를 만드는 방법
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) { // 정렬 방식 수정
+        VStack(alignment: .leading) {
             Text("Turtle Rock")
                 .font(.title)
             HStack {
@@ -25,7 +22,7 @@ struct ContentView: View {
                     .font(.subheadline)
             }
         }
-        .padding() // 내부 padding 부여
+        .padding()
     }
 }
 
