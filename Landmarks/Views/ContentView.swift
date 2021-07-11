@@ -26,7 +26,7 @@ struct ContentView: View {
                     Spacer()
                     Text("Seoul")
                 }
-                .font(.subheadline) // refactoring
+                .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
