@@ -9,16 +9,14 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        /* static
-        List {
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
-        }
-        */
-        // dynamic
-        // passing a key path or Identifiable data
-        List(landmarks) { landmark in
-            LandmarkRow(landmark: landmark)
+        NavigationView {
+            List(landmarks) { landmark in
+                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                    // 이 구문의 추가를 통해 UI에 > 기호가 추가됨
+                    LandmarkRow(landmark: landmark)
+                }
+            }
+            .navigationTitle("Landmarks")
         }
     }
 }
