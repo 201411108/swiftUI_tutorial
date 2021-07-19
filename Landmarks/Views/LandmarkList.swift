@@ -12,7 +12,6 @@ struct LandmarkList: View {
         NavigationView {
             List(landmarks) { landmark in
                 NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    // 이 구문의 추가를 통해 UI에 > 기호가 추가됨
                     LandmarkRow(landmark: landmark)
                 }
             }
@@ -23,6 +22,11 @@ struct LandmarkList: View {
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
+        ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
+            LandmarkList()
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
+        
     }
 }
