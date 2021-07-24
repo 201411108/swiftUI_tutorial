@@ -23,8 +23,6 @@ struct LandmarkList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites Only")
                 }
-                // 2개 이상의 서로 다른 View를 합칠 때는
-                // List의 인자로 주는 것이 아닌 ForEach문 사용
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                         LandmarkRow(landmark: landmark)
