@@ -13,3 +13,6 @@
 ## Contents
 
 1. [Landmarks](https://github.com/201411108/swiftUI_tutorial/tree/main/Landmarks_APP)
+- SwiftUI Essentials tutorial
+2. [ToupInfo](https://github.com/201411108/swiftUI_tutorial/tree/main/ToupInfo)
+- SwiftUI tutorial application with OpenAPI
