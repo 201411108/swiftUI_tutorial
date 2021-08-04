@@ -9,8 +9,14 @@ import SwiftUI
 
 struct GeoCodeList: View {
     var body: some View {
-        List(geocodes) { geocode in
-            GeoCodeRow(geoName: geocode.name)
+        NavigationView {
+            List(geocodes) { geocode in
+                NavigationLink(
+                    destination: DistrictList()) {
+                    RowView(name: geocode.name)
+                }
+            }
+            .navigationTitle("지역 선택")
         }
     }
 }
