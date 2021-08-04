@@ -11,7 +11,10 @@ import SwiftUI
 struct ToupInfoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let geocodeService = GeocodeService()
+            let _viewModel = GeocodeViewModel(geocodeService: geocodeService)
+//            ContentView()
+            GeocodeView(viewModel: _viewModel)
         }
     }
 }
