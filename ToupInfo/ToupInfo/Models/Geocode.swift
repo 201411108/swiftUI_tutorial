@@ -8,13 +8,9 @@
 import Foundation
 
 public struct Geocode {
-    let code: Int
-    let name: String
-    let rnum: Int
+    var items: [Item]
     
     init(response: APIResponse) {
-        code = response.response.body.items.item[1].code
-        name = response.response.body.items.item[1].name
-        rnum = response.response.body.items.item[1].rnum
+        items = response.response.body.items.item
     }
 }

@@ -9,9 +9,7 @@
 import Foundation
 
 public class GeocodeViewModel: ObservableObject {
-    @Published var codeValue: Int = 0
-    @Published var nameValue: String = "서울"
-    @Published var rnumValue: Int = 0
+    @Published var itemsList: [Item]?
     
     public let geocodeService: GeocodeService
     
@@ -22,9 +20,7 @@ public class GeocodeViewModel: ObservableObject {
     public func refresh() { // view에서 변경이 일어난 데이터를 반영할 수 있도록 하는 함수(binding)
         geocodeService.loadGeocodeData { geocode in
             DispatchQueue.main.async {
-                self.codeValue = geocode.code
-                self.nameValue = geocode.name
-                self.rnumValue = geocode.rnum
+                self.itemsList = geocode.items
             }
         }
     }

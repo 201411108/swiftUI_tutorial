@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct GeoCodeList: View {
+    @ObservedObject var viewModel: GeocodeViewModel
+    
     var body: some View {
         NavigationView {
-            List(geocodes) { geocode in
-                NavigationLink(
-                    destination: DistrictList()) {
-                    RowView(name: geocode.name)
+            List(viewModel.itemsList ?? [Item(code: 1, name: "서울", rnum: 1)], id: \.code) { item in
+                NavigationLink(destination: DistrictList()) {
+                    RowView(name: item.name)
                 }
             }
+            .onAppear(perform: viewModel.refresh)
             .navigationTitle("지역 선택")
         }
     }
@@ -23,6 +25,6 @@ struct GeoCodeList: View {
 
 struct GeoCodeList_Previews: PreviewProvider {
     static var previews: some View {
-        GeoCodeList()
+        GeoCodeList(viewModel: GeocodeViewModel(geocodeService: GeocodeService()))
     }
 }

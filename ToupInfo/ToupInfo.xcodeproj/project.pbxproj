@@ -9,25 +9,19 @@
 /* Begin PBXBuildFile section */
 		AE631BD626B1A339008DC9BE /* DistrictList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE631BD526B1A339008DC9BE /* DistrictList.swift */; };
 		AE631BD826B1A51D008DC9BE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE631BD726B1A51D008DC9BE /* RowView.swift */; };
-		AE631BDA26B1A7C0008DC9BE /* APIInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = AE631BD926B1A7C0008DC9BE /* APIInfo.json */; };
 		AE96FC5B26AF00EF00347582 /* ToupInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE96FC5A26AF00EF00347582 /* ToupInfoApp.swift */; };
 		AE96FC5D26AF00EF00347582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE96FC5C26AF00EF00347582 /* ContentView.swift */; };
 		AE96FC5F26AF00F400347582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE96FC5E26AF00F400347582 /* Assets.xcassets */; };
 		AE96FC6226AF00F400347582 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE96FC6126AF00F400347582 /* Preview Assets.xcassets */; };
 		AE9E038426BAD88100B7E698 /* GeocodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E038326BAD88100B7E698 /* GeocodeService.swift */; };
 		AE9E038626BAD9D800B7E698 /* Geocode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E038526BAD9D800B7E698 /* Geocode.swift */; };
-		AE9E038826BADD4A00B7E698 /* GeocodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E038726BADD4A00B7E698 /* GeocodeView.swift */; };
 		AE9E038A26BADE0900B7E698 /* GeocodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */; };
-		AEBBB6C926B0533B00E9417E /* GeoCode.json in Resources */ = {isa = PBXBuildFile; fileRef = AEBBB6C826B0533B00E9417E /* GeoCode.json */; };
-		AEBBB6CC26B053BE00E9417E /* GeoCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBBB6CB26B053BE00E9417E /* GeoCode.swift */; };
-		AEBBB6CF26B0547B00E9417E /* GeoCodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBBB6CE26B0547B00E9417E /* GeoCodeData.swift */; };
 		AEBBB6D126B0555800E9417E /* GeoCodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBBB6D026B0555800E9417E /* GeoCodeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AE631BD526B1A339008DC9BE /* DistrictList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictList.swift; sourceTree = "<group>"; };
 		AE631BD726B1A51D008DC9BE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		AE631BD926B1A7C0008DC9BE /* APIInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIInfo.json; sourceTree = "<group>"; };
 		AE96FC5726AF00EF00347582 /* ToupInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToupInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE96FC5A26AF00EF00347582 /* ToupInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToupInfoApp.swift; sourceTree = "<group>"; };
 		AE96FC5C26AF00EF00347582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,11 +30,7 @@
 		AE96FC6326AF00F400347582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9E038326BAD88100B7E698 /* GeocodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeService.swift; sourceTree = "<group>"; };
 		AE9E038526BAD9D800B7E698 /* Geocode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocode.swift; sourceTree = "<group>"; };
-		AE9E038726BADD4A00B7E698 /* GeocodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeView.swift; sourceTree = "<group>"; };
 		AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeViewModel.swift; sourceTree = "<group>"; };
-		AEBBB6C826B0533B00E9417E /* GeoCode.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GeoCode.json; sourceTree = "<group>"; };
-		AEBBB6CB26B053BE00E9417E /* GeoCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCode.swift; sourceTree = "<group>"; };
-		AEBBB6CE26B0547B00E9417E /* GeoCodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodeData.swift; sourceTree = "<group>"; };
 		AEBBB6D026B0555800E9417E /* GeoCodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,13 +53,12 @@
 			path = District;
 			sourceTree = "<group>";
 		};
-		AE631BDB26B1A926008DC9BE /* GeoCode */ = {
+		AE76ECB026BD009200368220 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AEBBB6CB26B053BE00E9417E /* GeoCode.swift */,
-				AEBBB6CE26B0547B00E9417E /* GeoCodeData.swift */,
+				AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */,
 			);
-			path = GeoCode;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AE96FC4E26AF00EF00347582 = {
@@ -91,12 +80,10 @@
 		AE96FC5926AF00EF00347582 /* ToupInfo */ = {
 			isa = PBXGroup;
 			children = (
-				AE9E038326BAD88100B7E698 /* GeocodeService.swift */,
-				AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */,
-				AEBBB6CA26B0535700E9417E /* Resources */,
+				AE96FC5A26AF00EF00347582 /* ToupInfoApp.swift */,
 				AEBBB6C326B04EBB00E9417E /* Models */,
 				AEBBB6C426B04EC700E9417E /* Views */,
-				AE96FC5A26AF00EF00347582 /* ToupInfoApp.swift */,
+				AE76ECB026BD009200368220 /* ViewModel */,
 				AE96FC5E26AF00F400347582 /* Assets.xcassets */,
 				AE96FC6326AF00F400347582 /* Info.plist */,
 				AE96FC6026AF00F400347582 /* Preview Content */,
@@ -115,8 +102,8 @@
 		AEBBB6C326B04EBB00E9417E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE631BDB26B1A926008DC9BE /* GeoCode */,
 				AE9E038526BAD9D800B7E698 /* Geocode.swift */,
+				AE9E038326BAD88100B7E698 /* GeocodeService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,7 +115,6 @@
 				AEBBB6C526B050AA00E9417E /* GeoCode */,
 				AE631BD426B1A1F9008DC9BE /* District */,
 				AE631BD726B1A51D008DC9BE /* RowView.swift */,
-				AE9E038726BADD4A00B7E698 /* GeocodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,23 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				AEBBB6D026B0555800E9417E /* GeoCodeList.swift */,
-			);
-			path = GeoCode;
-			sourceTree = "<group>";
-		};
-		AEBBB6CA26B0535700E9417E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AEBBB6CD26B0546E00E9417E /* GeoCode */,
-				AE631BD926B1A7C0008DC9BE /* APIInfo.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		AEBBB6CD26B0546E00E9417E /* GeoCode */ = {
-			isa = PBXGroup;
-			children = (
-				AEBBB6C826B0533B00E9417E /* GeoCode.json */,
 			);
 			path = GeoCode;
 			sourceTree = "<group>";
@@ -217,8 +186,6 @@
 			files = (
 				AE96FC6226AF00F400347582 /* Preview Assets.xcassets in Resources */,
 				AE96FC5F26AF00F400347582 /* Assets.xcassets in Resources */,
-				AE631BDA26B1A7C0008DC9BE /* APIInfo.json in Resources */,
-				AEBBB6C926B0533B00E9417E /* GeoCode.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,14 +199,11 @@
 				AEBBB6D126B0555800E9417E /* GeoCodeList.swift in Sources */,
 				AE631BD626B1A339008DC9BE /* DistrictList.swift in Sources */,
 				AE631BD826B1A51D008DC9BE /* RowView.swift in Sources */,
-				AE9E038826BADD4A00B7E698 /* GeocodeView.swift in Sources */,
 				AE96FC5D26AF00EF00347582 /* ContentView.swift in Sources */,
-				AEBBB6CC26B053BE00E9417E /* GeoCode.swift in Sources */,
 				AE96FC5B26AF00EF00347582 /* ToupInfoApp.swift in Sources */,
 				AE9E038426BAD88100B7E698 /* GeocodeService.swift in Sources */,
 				AE9E038A26BADE0900B7E698 /* GeocodeViewModel.swift in Sources */,
 				AE9E038626BAD9D800B7E698 /* Geocode.swift in Sources */,
-				AEBBB6CF26B0547B00E9417E /* GeoCodeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

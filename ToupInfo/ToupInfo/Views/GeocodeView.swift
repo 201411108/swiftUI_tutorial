@@ -11,14 +11,8 @@ struct GeocodeView: View {
     @ObservedObject var viewModel: GeocodeViewModel
     
     var body: some View {
-        VStack {
-            Text(String(viewModel.codeValue))
-            Text(viewModel.nameValue)
-                .font(.largeTitle)
-                .padding()
-            Text(String(viewModel.rnumValue))
-                .font(.system(size: 70))
-                .bold()
+        List(viewModel.itemsList ?? [Item(code: 1, name: "서울", rnum: 1)], id: \.code) { item in
+            Text(item.name)
         }.onAppear(perform: viewModel.refresh)
     }
 }

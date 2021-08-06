@@ -13,8 +13,7 @@ struct ToupInfoApp: App {
         WindowGroup {
             let geocodeService = GeocodeService()
             let _viewModel = GeocodeViewModel(geocodeService: geocodeService)
-//            ContentView()
-            GeocodeView(viewModel: _viewModel)
+            GeoCodeList(viewModel: _viewModel)
         }
     }
 }

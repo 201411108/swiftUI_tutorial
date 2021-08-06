@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        GeoCodeList()
+        Text("새로 구현하는 화면이 있다면 여기서 확인")
     }
 }
 

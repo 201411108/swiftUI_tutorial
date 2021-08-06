@@ -24,6 +24,6 @@ struct RowView: View {
 
 struct RowView_Previews: PreviewProvider {
     static var previews: some View {
-        RowView(name: geocodes[0].name)
+        RowView(name: "서울")
     }
 }

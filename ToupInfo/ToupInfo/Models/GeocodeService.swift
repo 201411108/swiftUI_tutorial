@@ -9,15 +9,16 @@ import Foundation
 import Combine
 
 public final class GeocodeService: NSObject {
-    private let API_KEY = "TTDpPyMyhGKry04rdO32btLuHoKvtkW75Qvlf%2FkAIkncTZORanIa8PNun7aG6DP5dmJF7XDTkM2ayEi32UlwsQ%3D%3D"
+    private let API_KEY = "Your API Key"
     private var completionHandler: ((Geocode) -> Void)? // Model의 데이터를 View와 바인딩할 함수
     
     public func loadGeocodeData(_ completionHandler: @escaping((Geocode) -> Void)) {
         self.completionHandler = completionHandler
+        makeDataRequest()
     }
     
-    public func makeDataRequest() { // request를 보낼 함수
-        guard let url = URL(string: "http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?serviceKey=TTDpPyMyhGKry04rdO32btLuHoKvtkW75Qvlf%2FkAIkncTZORanIa8PNun7aG6DP5dmJF7XDTkM2ayEi32UlwsQ%3D%3D&MobileOS=IOS&MobileApp=ToupInfo&_type=json") else {
+    public func makeDataRequest() { // request를 보낼 함수, 이 함수가 호출되지 않고 있었음
+        guard let url = URL(string: "http://api.visitkorea.or.kr/openapi/service/rest/KorService/areaCode?serviceKey=\(API_KEY)&MobileOS=IOS&MobileApp=ToupInfo&_type=json") else {
             return
         }
         
@@ -28,7 +29,6 @@ public final class GeocodeService: NSObject {
             
             if let response = try? JSONDecoder().decode(APIResponse.self, from: data) {
                 self.completionHandler?(Geocode(response: response))
-                print(response)
             }
         }.resume()
     }
