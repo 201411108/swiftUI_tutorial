@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 public final class GeocodeService: NSObject {
-    private let API_KEY = "TTDpPyMyhGKry04rdO32btLuHoKvtkW75Qvlf%2FkAIkncTZORanIa8PNun7aG6DP5dmJF7XDTkM2ayEi32UlwsQ%3D%3D" // Commit 시 제외하고 Commit 할 것
+    private let API_KEY = "api_key" // Commit 시 제외하고 Commit 할 것
     private var completionHandler: ((Geocode) -> Void)? // Model의 데이터를 View와 바인딩할 함수
     
     public func loadGeocodeData(_ completionHandler: @escaping((Geocode) -> Void)) {
