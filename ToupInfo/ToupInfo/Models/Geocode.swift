@@ -2,6 +2,7 @@
 //  Geocode.swift
 //  ToupInfo
 //
+//  Geocode Model
 //  Created by 김한동 on 2021/08/04.
 //
 

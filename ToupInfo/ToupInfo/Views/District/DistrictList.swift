@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct DistrictList: View {
-    // var geocode: Int // 지역 코드를 geocode view로부터 받음
-    var districts: [String] = ["노원구", "강남구", "도봉구"]
+    @ObservedObject var viewModel: DistrictViewModel
     
     var body: some View {
-        List(districts, id: \.self) { district in
-            RowView(name: district)
+        List(viewModel.itemsList ?? [Item(code: 1, name: "", rnum: 1)], id: \.code) { item in
+            RowView(name: item.name)
         }
+        .onAppear(perform: viewModel.refresh)
     }
 }
 
 struct DistrictList_Previews: PreviewProvider {
     static var previews: some View {
-        DistrictList()
+        DistrictList(viewModel: DistrictViewModel(code: 1, geocodeService: GeocodeService()))
     }
 }
