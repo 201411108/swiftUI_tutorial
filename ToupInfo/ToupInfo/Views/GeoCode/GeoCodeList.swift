@@ -13,7 +13,8 @@ struct GeoCodeList: View {
     var body: some View {
         NavigationView {
             List(viewModel.itemsList ?? [Item(code: 1, name: "서울", rnum: 1)], id: \.code) { item in
-                NavigationLink(destination: DistrictList()) {
+                // districtViewModel을 전달
+                NavigationLink(destination: DistrictList(viewModel: DistrictViewModel(code: item.code, geocodeService: GeocodeService()))) {
                     RowView(name: item.name)
                 }
             }
