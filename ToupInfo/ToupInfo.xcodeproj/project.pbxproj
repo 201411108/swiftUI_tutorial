@@ -17,6 +17,7 @@
 		AE9E038626BAD9D800B7E698 /* Geocode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E038526BAD9D800B7E698 /* Geocode.swift */; };
 		AE9E038A26BADE0900B7E698 /* GeocodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */; };
 		AEBBB6D126B0555800E9417E /* GeoCodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBBB6D026B0555800E9417E /* GeoCodeList.swift */; };
+		AEFE012E26CCEF26000528D1 /* DistrictViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFE012D26CCEF26000528D1 /* DistrictViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AE9E038526BAD9D800B7E698 /* Geocode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocode.swift; sourceTree = "<group>"; };
 		AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeViewModel.swift; sourceTree = "<group>"; };
 		AEBBB6D026B0555800E9417E /* GeoCodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCodeList.swift; sourceTree = "<group>"; };
+		AEFE012D26CCEF26000528D1 /* DistrictViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AE9E038926BADE0900B7E698 /* GeocodeViewModel.swift */,
+				AEFE012D26CCEF26000528D1 /* DistrictViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFE012E26CCEF26000528D1 /* DistrictViewModel.swift in Sources */,
 				AEBBB6D126B0555800E9417E /* GeoCodeList.swift in Sources */,
 				AE631BD626B1A339008DC9BE /* DistrictList.swift in Sources */,
 				AE631BD826B1A51D008DC9BE /* RowView.swift in Sources */,
