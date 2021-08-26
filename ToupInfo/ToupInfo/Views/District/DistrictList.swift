@@ -2,6 +2,7 @@
 //  DistrictList.swift
 //  ToupInfo
 //
+//  지역정보 코드(`code`)를 받아 해당 지역의 시/군/구 정보를 받아와 리스트를 구성하는 뷰
 //  Created by 김한동 on 2021/07/28.
 //
 

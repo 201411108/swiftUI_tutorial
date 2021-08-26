@@ -2,7 +2,7 @@
 //  Geocode.swift
 //  ToupInfo
 //
-//  Geocode Model
+//  지역정보를 위한 모델
 //  Created by 김한동 on 2021/08/04.
 //
 

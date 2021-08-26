@@ -2,6 +2,9 @@
 //  GeocodeService.swift
 //  ToupInfo
 //
+//  지역정보 모델에서 사용해야 할 서비스 정의
+//  API를 호출하여 선택 가능한 지역정보를 받아온다.
+//  지역정보 code를 통해서 예하 시/군/구 정보를 받아오는 코드를 작성한다.
 //  Created by 김한동 on 2021/08/04.
 //
 
@@ -9,7 +12,7 @@ import Foundation
 import Combine
 
 public final class GeocodeService: NSObject {
-    private let API_KEY = "api_key" // Commit 시 제외하고 Commit 할 것
+    private let API_KEY = "API_KEY" // Commit 시 제외하고 Commit 할 것
     private var completionHandler: ((Geocode) -> Void)? // Model의 데이터를 View와 바인딩할 함수
     
     public func loadGeocodeData(_ completionHandler: @escaping((Geocode) -> Void)) {

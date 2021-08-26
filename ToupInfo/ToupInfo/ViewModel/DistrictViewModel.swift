@@ -2,6 +2,7 @@
 //  DistrictViewModel.swift
 //  ToupInfo
 //
+//  시/군/구 정보를 위한 뷰모델
 //  Created by 김한동 on 2021/08/18.
 //
 
