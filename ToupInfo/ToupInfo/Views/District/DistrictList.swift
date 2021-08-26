@@ -12,7 +12,9 @@ struct DistrictList: View {
     
     var body: some View {
         List(viewModel.itemsList ?? [Item(code: 1, name: "", rnum: 1)], id: \.code) { item in
-            RowView(name: item.name)
+            item.name != "" ?
+                RowView(name: item.name) :
+                RowView(name: "없음") // 이 경우에는 바로 지역관광정보 사용
         }
         .onAppear(perform: viewModel.refresh)
     }
