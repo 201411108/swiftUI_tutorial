@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE631BD626B1A339008DC9BE /* DistrictList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE631BD526B1A339008DC9BE /* DistrictList.swift */; };
 		AE631BD826B1A51D008DC9BE /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE631BD726B1A51D008DC9BE /* RowView.swift */; };
+		AE8DA15F26D92E5B000F05E0 /* TourService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DA15E26D92E5B000F05E0 /* TourService.swift */; };
 		AE96FC5B26AF00EF00347582 /* ToupInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE96FC5A26AF00EF00347582 /* ToupInfoApp.swift */; };
 		AE96FC5D26AF00EF00347582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE96FC5C26AF00EF00347582 /* ContentView.swift */; };
 		AE96FC5F26AF00F400347582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE96FC5E26AF00F400347582 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		AE631BD526B1A339008DC9BE /* DistrictList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictList.swift; sourceTree = "<group>"; };
 		AE631BD726B1A51D008DC9BE /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		AE8DA15E26D92E5B000F05E0 /* TourService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourService.swift; sourceTree = "<group>"; };
 		AE96FC5726AF00EF00347582 /* ToupInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToupInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE96FC5A26AF00EF00347582 /* ToupInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToupInfoApp.swift; sourceTree = "<group>"; };
 		AE96FC5C26AF00EF00347582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				AE9E038526BAD9D800B7E698 /* Geocode.swift */,
 				AE9E038326BAD88100B7E698 /* GeocodeService.swift */,
+				AE8DA15E26D92E5B000F05E0 /* TourService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				AEFE012E26CCEF26000528D1 /* DistrictViewModel.swift in Sources */,
 				AEBBB6D126B0555800E9417E /* GeoCodeList.swift in Sources */,
 				AE631BD626B1A339008DC9BE /* DistrictList.swift in Sources */,
+				AE8DA15F26D92E5B000F05E0 /* TourService.swift in Sources */,
 				AE631BD826B1A51D008DC9BE /* RowView.swift in Sources */,
 				AE96FC5D26AF00EF00347582 /* ContentView.swift in Sources */,
 				AE96FC5B26AF00EF00347582 /* ToupInfoApp.swift in Sources */,
